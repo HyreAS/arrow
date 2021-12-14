@@ -2096,6 +2096,9 @@ class NorwegianLocale(Locale):
     ]
     day_abbreviations = ["", "ma", "ti", "on", "to", "fr", "lø", "sø"]
 
+    def _ordinal_number(self, n: int) -> str:
+        return f"{n}."
+
 
 class NewNorwegianLocale(Locale):
 
@@ -2162,6 +2165,9 @@ class NewNorwegianLocale(Locale):
         "sundag",
     ]
     day_abbreviations = ["", "må", "ty", "on", "to", "fr", "la", "su"]
+
+    def _ordinal_number(self, n: int) -> str:
+        return f"{n}."
 
 
 class PortugueseLocale(Locale):
